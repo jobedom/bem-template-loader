@@ -1,5 +1,5 @@
 <template lang="bem-html">
-   <div block="counter-card">
+   <div block="card">
       <div element="signal" modifiers="round"></div>
    </div>
 </template>
@@ -9,7 +9,7 @@
 </script>
 
 <style lang="stylus">
-   .counter-card
+   .card
       &__signal
          background #888888
          width 200px
