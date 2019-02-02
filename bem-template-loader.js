@@ -2,9 +2,9 @@ const os = require('os');
 const he = require('he');
 const cheerio = require('cheerio');
 
-const BEM_BLOCK = 'bem-block';
-const BEM_ELEMENT = 'bem-element';
-const BEM_MODIFIERS = 'bem-modifiers';
+const BEM_BLOCK = 'block';
+const BEM_ELEMENT = 'element';
+const BEM_MODIFIERS = 'modifiers';
 const BEM_ATTR = '__bem__';
 
 function bemError(message, filename) {
