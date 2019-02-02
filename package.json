@@ -1,0 +1,21 @@
+{
+   "name": "bem-template-loader",
+   "version": "1.0.0",
+   "description": "Template preprocessor for Vue SFC to simplify BEM classes usage.",
+   "author": "jobedom@gmail.com",
+   "license": "MIT",
+   "main": "index.js",
+   "scripts": {},
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jobedom/bem-template-loader.git"
+   },
+   "bugs": {
+      "url": "https://github.com/jobedom/bem-template-loader/issues"
+   },
+   "homepage": "https://github.com/jobedom/bem-template-loader#readme",
+   "dependencies": {
+      "cheerio": "^1.0.0-rc.2",
+      "he": "^1.2.0"
+   }
+}
