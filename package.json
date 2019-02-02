@@ -4,7 +4,7 @@
    "description": "Template preprocessor for Vue SFC to simplify BEM classes usage.",
    "author": "jobedom@gmail.com",
    "license": "MIT",
-   "main": "index.js",
+   "main": "bem-template-loader.js",
    "scripts": {},
    "repository": {
       "type": "git",
