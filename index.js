@@ -15,7 +15,6 @@ function bemError(message, filename) {
 }
 
 module.exports = function (content) {
-   console.log('👉 %ccontent', 'background: yellow', content);
    const context = this;
    const filename = context.resourcePath;
    this.cacheable && this.cacheable();

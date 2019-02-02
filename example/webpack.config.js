@@ -43,7 +43,7 @@ module.exports = {
    },
 
    resolveLoader: {
-      modules: [pathResolve('node_modules'), pathResolve('..')],
+      modules: [pathResolve('node_modules')],
    },
 
    module: {
@@ -51,12 +51,23 @@ module.exports = {
          {
             test: /\.vue$/,
             loader: 'vue-loader',
+         },
+         {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
             options: {
-               loaders: {
-                  js: 'babel-loader',
-                  html: 'bem-template-loader',
-               },
+               cacheDirectory: true,
             },
+         },
+         {
+            test: /\.bem-html$/,
+            oneOf: [
+               {
+                  resourceQuery: /^\?vue/,
+                  use: ['../index'],
+               },
+            ],
          },
          {
             test: /\.css$/,

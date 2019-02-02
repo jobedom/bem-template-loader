@@ -1,11 +1,6 @@
-<template>
-   <div block="profile">
-      <div element="info">INFO</div>
-      <div
-         element="picture"
-         modifiers="small round"
-      >PICTURE
-      </div>
+<template lang="bem-html">
+   <div block="counter-card">
+      <div element="signal" modifiers="round"></div>
    </div>
 </template>
 
@@ -14,23 +9,16 @@
 </script>
 
 <style lang="stylus">
-   .profile
-      border 1px solid #cccccc
-      border-radius 1em
-      padding 1em
+   .counter-card
+      &__signal
+         background #888888
+         width 200px
+         height 200px;
 
-      &__info
-         background yellow
+         &--small
+            width 50px
+            height 50px
 
-         &__picture
-            background orange
-            width 100px
-            height 100px
-
-            &--small
-               width 50px
-               height 50px
-
-            &--round
-               border-radius 50%
+         &--round
+            border-radius 50%
 </style>
